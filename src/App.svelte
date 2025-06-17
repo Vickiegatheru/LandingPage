@@ -412,4 +412,48 @@ display: inline-block;
 .icon-button1:hover {
   color: #000;
 }
+@media (max-width: 768px) {
+  .mainPage {
+    grid-template-columns: 1fr;
+  }
+
+  .column1,
+  .column2 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  #makeComment {
+    width: 100%;
+    height: auto;
+  }
+
+  .toolbar {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #mainImage img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  select,
+  button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
 </style>
